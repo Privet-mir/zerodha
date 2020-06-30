@@ -30,11 +30,11 @@ Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from ther
 
     When prompt select network interface to which internet is connected
 
-    ![alt vagrant] (https://github.com/Privet-mir/zerodha/blob/master/img/vagrant-deployment.png)
+    ![alt vagrant](https://github.com/Privet-mir/zerodha/blob/master/img/vagrant-deployment.png)
 
 3. Once deployment is done you can see logs printed on terminal perfoming health check.
 
-    ![alt ansible] (https://github.com/Privet-mir/zerodha/blob/master/img/ansible-config-status.png)
+    ![alt ansible](https://github.com/Privet-mir/zerodha/blob/master/img/ansible-config-status.png)
 
    you can also verify manually by running following command
 
@@ -52,7 +52,7 @@ Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from ther
 
     it will create deployment from mainifest file located in **k8s directory**. the script will first create Namespace then deploy redis app, **while loop** have been placed in script for pod **status check** it will run until pod status is RUNNING once condition is met loop will break and script will deploy go-app same will be done for **go-app pod**. once deployment is completed script will fetch minikube IP and run  ```curl IP:NodePort``` to check requests are served from pod.  
 
-    ![alt k8s] (https://github.com/Privet-mir/zerodha/blob/master/img/k8s-deployment.png)
+    ![alt k8s](https://github.com/Privet-mir/zerodha/blob/master/img/k8s-deployment.png)
 
 2. delete deployments
 
