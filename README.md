@@ -21,6 +21,7 @@
   * Deploy the `docker-compose.yml` in `/etc/demo-ops` and start the services
 
 Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from there to configure ubuntu machine.
+``` ssh-keygen ```
 
 #### Steps
 1. ``` chmod +x main.sh ```
@@ -28,7 +29,7 @@ Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from ther
 
     ``` ./main.sh start```
 
-    When prompt select network interface to which internet is connected
+    When prompt, select network interface to which internet is connected
 
     ![alt vagrant](https://github.com/Privet-mir/zerodha/blob/master/img/vagrant-deployment.png)
 
@@ -40,13 +41,13 @@ Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from ther
 
     ``` vagrant ssh -c "curl localhost:8000" ```
 
-4. To destroy VM simply run follwoing command
+4. To destroy VM simply run following command
 
     ``` ./main.sh stop ```
 
 
 #### Bonus
-1. To deploy over k8s run follwoing command
+1. To deploy over k8s run following command
 
     ``` ./main.sh k8s  ```
 
