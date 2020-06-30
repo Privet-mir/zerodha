@@ -25,7 +25,7 @@ Make sure you have ssh key located at ~/.ssh/ as vagrant will pick key from ther
 
 #### Steps
 1. ``` chmod +x main.sh ```
-2. Deploy Vagrant ubuntu machine and configure it using ansbile.
+2. Deploy Vagrant ubuntu machine and configure it using ansbile. (script will configure ansible inventory file by fetching vagrant machine ip and placing it in ansible-playbook/inventory)
 
     ``` ./main.sh start```
 
