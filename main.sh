@@ -114,7 +114,6 @@ if [ -x "$(vagrant --version)" ]; then
         exit 0
     else
         echo $(vagrant --version)
-        print_help
 fi
 
 
@@ -127,7 +126,7 @@ elif [ "k8s" == "$1" ];then
     k8s_app
 elif [ "k8sremove" == "$1" ]; then
     k8s_remove
-elif [ "$#" -eq 0 ];then
+elif [ $# -eq 0 ];then
     print_help
 fi
 
