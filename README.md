@@ -1,4 +1,4 @@
-# Zerodha Ops Interview Task
+#  Ops Interview Task
 
 ## prerequisite
 1. VirtualBox (https://www.virtualbox.org/)
